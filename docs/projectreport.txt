@@ -1,0 +1,99 @@
+------------------------------------------------------------
+PROJECT REPORT
+------------------------------------------------------------
+Course Code: CSEG1032
+Course Title: Programming in C
+Project Title: TripSOS
+Student Names: Akshay Pandey
+Roll Numbers: 590024919
+Semester: 1
+------------------------------------------------------------
+1. ABSTRACT
+This program, TripSOS – Dehradun Help Center, is a menu-driven C application designed to provide quick
+assistance during emergency situations. It allows users to select from categories such as car issues, medical
+emergencies, and police or safety concerns, and then displays relevant solutions and map suggestions. The
+program demonstrates core C concepts including functions, conditional statements, loops, and input
+validation, while offering a simple and user-friendly console interface.
+
+------------------------------------------------------------
+2. OBJECTIVE
+The objective of TripSOS – Dehradun Help Center is to provide quick and easy access to emergency solutions,
+contact information, and location guidance for travelers and residents in Dehradun using a simple, interactive
+C-based console application.It aims to provide:
+* Quick guidance for car issues, medical emergencies, and safety/police concerns.
+* Relevant solutions, emergency contact numbers, and map search suggestions.
+* A practical demonstration of core C programming concepts such as functions, loops, conditional
+  statements, input validation, and console-based user interaction.
+
+------------------------------------------------------------
+3. PROBLEM DEFINITION
+Travelers and residents in Dehradun may face unexpected emergencies such as car breakdowns, medical
+issues, or safety-related incidents. In such situations, finding immediate guidance, emergency contact
+numbers, or nearby services can be difficult, especially for someone unfamiliar with the area.
+
+------------------------------------------------------------
+4. SYSTEM DESIGN AND ALGORITHM
+
+* System Design
+TripSOS – Dehradun Help Center is a menu-driven C console application designed using a modular
+approach. It is divided into multiple functions for better structure, readability, and reusability:
+
+* Modules / Functions
+
+* showHomePage() – Displays the welcome message.
+* showMenu() – Shows the main topics (Car Issues, Medical Emergencies, Safety & Police Help).
+* showQuestions(topic) – Displays three questions under the selected topic.
+* showSolution(topic, question) – Provides the solution for the selected topic and question
+* showMapHint(topic, question) – Displays map search suggestions for the selected scenario.
+* main() – Handles program flow, input validation, looping, and calls other functions.
+
+* ALGORITHM
+1. Start the program.
+2. Call showHomePage() to display welcome message.
+3. Initialize running = 1.
+4. While running is 1:
+   a. Call showMenu() to display topics.
+   b. Prompt user to enter topic choice.
+   c. If input is invalid, display error and continue.
+   d. Call showQuestions(topic) to display questions.
+   e. Prompt user to enter question choice.
+   f. If input is invalid, display error and continue.
+   g. Call showSolution(topic, question) to display solution.
+   h. Call showMapHint(topic, question) to show map suggestion.
+   i. Ask user if they want to search again (1 = Yes, 0 = No).
+5. End program and display exit message.
+
+------------------------------------------------------------
+* KEY LANGUAGE FEATURES USED
+
+The TripSOS – Dehradun Help Center demonstrates the use of several important features of the C programming language:
+
+*Functions
+
+Used to modularize the code and perform specific tasks (showMenu(), showQuestions(), showSolution(), etc.).
+
+*Conditional Statements
+
+if-else and switch-case are used to control program flow based on user input.
+
+*Loops
+
+while loop is used to repeat the menu until the user chooses to exit.
+
+*Input/Output (I/O) Operations
+
+printf() is used for displaying menus, messages, and solutions.
+
+scanf() is used for receiving input from the user.
+
+*Input Validation
+
+Ensures only valid numeric input is accepted and prevents program crashes.
+
+*Parameter Passing
+
+Functions take arguments such as topic and question to provide dynamic behavior.
+
+*Standard Library Usage
+
+<stdio.h> is used for basic input-output operations.
